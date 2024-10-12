@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.background {
+  height: 100vh;
+  background: linear-gradient(rgba(255, 25, 0, 0.598), rgba(255, 25, 0, 0.595)), url('../public/images/bg-intro-desktop.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 580px) {
+  .background {
+    background: linear-gradient(rgba(255, 25, 0, 0.598), rgba(255, 25, 0, 0.595)), url('../public/images/bg-intro-mobile.png');
+    background-size: contain;
+    background-repeat: repeat;
+  }
+}
